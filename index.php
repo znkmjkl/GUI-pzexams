@@ -41,118 +41,20 @@
 ?>
 
 <div class="container">
-	<div id="karuzela" class="carousel slide">
-		<!-- Kropki -->
-		<ol class="carousel-indicators">
-			<li data-target="#karuzela" data-slide-to="0" class="active"></li>
-			<li data-target="#karuzela" data-slide-to="1"></li>
-			<?php
-				if (!(isset($_SESSION['USER'])&&($_SESSION['USER']!=''))) {
-					echo '<li data-target="#karuzela" data-slide-to="2"></li>';
-				}
-			?>
-		</ol>
-    
-		<!-- Slajdy -->
-		<div class="carousel-inner">
-			<?php
-				if (!(isset($_SESSION['USER'])&&($_SESSION['USER']!=''))) {
-					echo '
-					<div class="item active">
-						<a href="RegisterForm.php">
-							<img src="img/Rejestracja.jpg" alt="">
-						</a>
-						<!-- Opis slajdu -->
-						<div class="carousel-caption">
-							<a href="RegisterForm.php" id="slideTitle">
-								<h4>Rejestracja</h4>
-								<p>Dołącz do serwisu, który zmienia szare życie tysięcy egzaminatorów!</p>
-							</a>
-						</div>
-					</div>';
-				}
-
-				if (!(isset($_SESSION['USER'])&&($_SESSION['USER']!=''))) {
-					echo'<div class="item">';
-				} else { 
-					echo'<div class="item active">';
-				}
-			?>
-			<a href="Help.php">
-				<img src="img/Pomoc.jpg" alt="">
-			</a>
-			<!-- Opis slajdu -->
-			<div class="carousel-caption">
-				<a href="Help.php" id="slideTitle">
-					<h4>Pomoc</h4>
-					<p>Chcesz uzyskać informację na temat naszego systemu? Zajrzyj do obszernej instrukcji przygotowanych przez naszych specjalistów.</p>
-				</a>
-			</div>
-		</div>
-	      
-		<div class="item">
-			<a href="Authors.php">
-				<img src="img/Autorzy.jpg" alt="">
-			</a>
-			<!-- Opis slajdu -->
-			<div class="carousel-caption">
-				<a href="Authors.php" id="slideTitle">
-					<h4>Autorzy</h4>
-					<p>Chcesz dowiedzieć się więcej o naszej drużynie developerskiej. Zajrzyj tutaj!</p>
-				</a>
-			</div>
-		</div>      
-	</div>
-    
-	<!-- Strzalki -->
-	<a class="left carousel-control" href="#karuzela" data-slide="prev">
-		<span class="icon-prev"></span>
-	</a>
-	<a class="right carousel-control" href="#karuzela" data-slide="next">
-		<span class="icon-next"></span>
-	</a>
-	</div>
-</div>
-
-<div class="container text-center">
-	<h3>Tworzenie i zarządzanie egzaminami nigdy nie było takie proste!</h3>
-	<p style="margin-bottom: 30px;">
-	PZ-Exams to platforma służąca do tworzenia egzaminów ustnych jak i rejestracji na nie, na której mogą polegać zarówno wykładowcy jak i studenci. <br/>
-	Nimniejszy serwis została opracowana przez zespół studentów, którzy doskonale zdają sobie sprawę z ograniczeń  uczelnianych systemów takich jak USOS. <br/>
-	Dlatego jeżeli jesteś nauczycielem akdemickim, który uważa, że egzaminy ustne są jedyną dobrą formą egzaminu. To znaczy, że ten serwis jest właśnie dla ciebie!
-	</p>
-		<div class="col-xs-12 col-sm-12 col-md-12">
-			<div class="col-xs-4 col-sm-4 col-md-4">
-				<a href="Licence.php">
-					<img src="img/IconTechnology.png" alt="">
-				</a>
-				<h4>Nowoczesne technologie</h4>
-				<p>Wykorzystujemy tylko najnowocześniejsze technologie. Sprawdź na czym zbudowaliśmy nasz serwis.</p>
-			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4">
-				<a href="Contact.php">
-					<img src="img/IconContact.png" alt="">
-				</a>	
-				<h4>Formularz kontaktowy</h4>
-				<p>Systematycznie staramy się rozwijać nasz serwis. Jeżeli masz jakiekolwie uwagi to skontaktuj się z drużyną deweloperską!</p>
-			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4">
-				<a href="https://github.com/klugier/pz-exams">
-					<img src="img/IconCode.png" alt="">
-				</a>
-				<h4>Otwarte oprogramowanie</h4>
-				<p>Kod źródłowy naszego serwisu jest dostępny publicznie.</p>
-			</div>
-		</div>
-</div>
-<a href="#" data-toggle="tooltip" tooltip-placement="top" title="" data-original-title="Default tooltip Defauasdasdsad asdadlt Defauasdasdsad asdadlt Defauasdasdsad asdadlt Defauasdasdsad asdadlt Defauasdasdsad asdadlt Defauasdasdsad asdadlt Defauasdasdsad asdadlt ">test top</a><br/>
-<a href="#" data-toggle="tooltip" tooltip-placement="right" title="" data-original-title="Defauasdasdsad asdadlt tooltip">test right</a><br/>
-<a href="#" style="text-alight:right; margin-left:50px;" data-toggle="tooltip" tooltip-placement="left" title="" data-original-title="Default tooltip">test left</a><br/>
-     
-            
-<script>
-
-</script>
+	<div class="col-md-4 col-md-offset-4" style="border: 1px solid black;">
+		<form class="form-signin" role="form" style="margin-right:10px;margin-left:10px;" method="post"	action="controler/LogIn.php">
+			<h3	style="text-align:center;	font-weight:bold;	padding-bottom:15px;">Logowanie	do	systemu</h3>
+			
+			<input type="email" name="email" class="form-control" placeholder="Adres e-mail" required	autofocus style="margin-bottom:3px;">
+			
+			<input type="password" style="margin-top:10px;" name="pass"	class="form-control" placeholder="Hasło" required>			
+			
+			<label class="">
+				<a href="ForgottenPassword.php">Zapomniałeś hasła?</a>
+			</label>
+			<button	type="submit"	class="btn	btn-success	btn-lg	btn-block"	style="margin-top:20px;	margin-bottom:5px;"><b>Zaloguj</b></button>
+		</form>
+	</div>	
 
 <?php 
 	include("html/End.php");
