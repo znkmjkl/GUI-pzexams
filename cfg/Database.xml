@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Database>
+	<Server>localhost</Server>
+	<User>root</User>
+	<Password>123456</Password>
+	<Name>pzexams</Name>
+</Database>

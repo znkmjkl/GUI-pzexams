@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings>
+	<Adress>89.72.36.108/github/pz-exams</Adress>
+	<Debug>0</Debug>
+	<Domains>
+		<Domain>uj.edu.pl</Domain>
+		<Domain>agh.edu.pl</Domain>
+		<Domain>gmail.com</Domain>
+		<Domain>poczta.onet.pl</Domain>
+	</Domains>
+	<Email>
+		<Adress>michal.pachel@uj.edu.pl</Adress>
+		<Password>123qweASD</Password>
+		<Host>mail.uj.edu.pl</Host>
+		<Port>465</Port>
+	</Email>
+	<Authorization>
+		<UseCode>1</UseCode>
+		<Code>6485210</Code>
+	</Authorization>
+</Settings>

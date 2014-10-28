@@ -1,0 +1,113 @@
+Programowanie zespołowe - Zadania - Egazminy ustne
+
+*   - Oznacza zadanie opcjonalne
+**  - Oznacza zadanie opcjonalne o wysokim stopniu trudności
+!   - Oznacza możliwość rozbicia na zadanie niezależne
+
+1. Stworzenie szkieletu strony
+	a)  Stworzyć główne menu strony tytułowej (2)
+	b)  Stworzyć stronę tytułową // <- To na koniec
+		 - Stworzyć materiały propagandowe (Dlaczego nasz serwis jest lepszy od konkurencji ;))
+		 - Wymyślenie hasła marketingowego np. "Egzaminy ustne na nie się u nas rejestrujesz i w mig je zdajesz" ;)
+	c)  Stwrzyć szkielet strony (3)
+	d)  Stworzyć stopkę (1)
+     - W stopce mogą znajdować się informację prawne
+     - Copyright
+	e)  Stworzyć podstronę z autorami projektu (Creditsy). (2)
+	f)  Stworzyć podstronę z informacjami kontaktowymi (5)
+		- Np. e-mail do pomocy technicznej
+		- Formularz kontkatowy umożliwiający zgłoszenie problemu przez urzytkownika
+		- Zabezpieczenie przed botami
+		- Stworzenie mechaniki wysyłania wiadomości
+		+ Walidacja w Java Script
+	g)  Stworzyć informację o wykorzystywanych plikach cookies. // <- To na koniec
+	h)  Stworzyć formularz rejestracyjny dla egzaminatorów  (5)
+		- Powinno zawierać zabezpieczenie przeciwko botom.
+		- Generowanie wiadomości e-mail proszących o potwierdzenie rejestracji.
+		+ Walidacja w Java Script
+	i) Stworzyć mechanikę formularza rejestracyjnego (5)
+		- Egzaminator powinien zostać utworzony w bazie danych
+	i)  Stworzyć panel oraz mechanikę logowania do systemu. (8)
+		- (**) - Szyfrowanie transmisji danych przy pomocy protokołu SSL lub HTTPS.
+		- Po zalogowaniu następuje przekierowanie na stronę np. "Loggin succes"
+		+ Walidacja po stronie serwera np. złe hasło, zły login
+	j)  Stworzyć globalny plik służączy do generowania znacznika "head" dla projektu. (2)
+		- Zastanowić się nad wyrażeniami warunkowymi
+		- Przykładowy sposób urzycia (Przykładowy - proszę się nie sugerować):
+			<?php
+				$title = 'Tytuł | Strona Główna';
+				require_once('Head.php');
+			?>
+	k)  Napisać stronę z "pomocą", dotyczącą naszej aplikacji np. jak poprawnie się zarejestrować itp. // <- Jak system będzie gotowy
+	
+
+2. Stworzenie aplikacji - Administracja
+	a) Stworznie formularza umożliwiającego utworzenie nowego egzaminu
+		- (!) Powinna istnieć możliwość wybierania konkretnych dat oraz przedziałów czasowych np. Środa (10-12 oraz (14-18)
+		- (!) System powinien mieć możliwość zadeklarowania maksymalnej ilości studentów przystępujących do egzaminu, na jego podstawie system określał by czas trwania jednostki egzaminacyjnej.
+	b) Stworzenie możliwości importu szablonu egzaminu z pliku
+		- (!) Dodać obsługę formatu ods
+		- (!) Dodać obsługę formatu xls
+		- Zastanowić się nad obsługą innych formatów np. csv
+	c) Stworzenie podsystemu odpowiedzialnego za dodawanie studentów do systemu
+		- (!) Prowadzący ma wprowadzać adres e-mail studenta
+			- Zastanowić się jak zabezpieczyć ten proces (Samo dodanie adresu e-mail wydaje się niebezpieczne)
+		- (!) Prowadzący ma mieć możliwość cofnięcia rekomendacji studenta 
+	d) Dodać możliwość ograniczenia czasowego na rejestrację dla użytkowników
+		- Zastanowić się nad możliwością losowego przydzielania terminu dla osób, które nie dokonały rejestracji (Czy to ma sens??? - Co w przypadku kiedu użytkownik po prostu nie ma ochoty na stawienie się na egzamin?)
+		  Być może warto dodać opcję administracyjną -> Rozlosuj terminy
+	e) Dodać możliwość blokowania dowolnego rekordu przez egzaminatora.
+		- Rekord w egzaminie powinien mieć dwa stany aktywny i nie aktywny
+		- Operacja powinna być atomowa (należy użyć tranzakcji)
+	f) Stworzenie globalnego panelu administracyjnego
+		- Moderator ma te same prawa w systemie co egzaminator. Ponadto może zarządzać użytkownikami systemu(egzaminatorami) np. zbanować ich, usunąć im konto, dać ostrzeżenie.
+	g) Stworzenie możliwości edytowania ustawień osobistych przez użytkownika
+		- (!)  Zmiana hasła
+		- (!)  Zmiana rodzaju profilu publiczny/prywatny itp.
+		- (!)  Umożliwienie zmiany niektórych informacji podanych podczas rejestracji
+		- (*!) Możliwość załadowania zdjęcia
+		- (!)  itp.
+
+3. Stworzenie aplikacji - Rejestracja na egzamin
+	a)  Na bazie kontrolki (Patrz: 4a) stworzyć kontrolkę umożliwiającą rejestrację na egzamin
+		- Ja to w chwili obecnej rozumiem tak:
+				- Klikam na termin, który jest wolny
+				- Po kliknięciu pojawia mi się przycisk "Rejestruj"
+				- No i powinienem być zarejestrowany na egzamin ;)
+	b)  Student ma mieć możliwość wybrania terminu i zarejestrowania się na niego.
+		- (!) Napisanie tranzakcji tak aby dwóch użytkowników nie mogło zarejestrować się na ten sam termin
+	
+4. Stworzenie aplikacji - Wyświetlanie informacji
+	a)  Stworzyć kontrolkę, która w przemyślany sposób wyświetli harmonogram egzaminu.
+	b)  Egzaminator powinien być w stanie wyświetlać listę swoich egzaminów.
+	c)  Użytkownik powinien mieć możliwość przeglądania profilu egzaminatora.
+		 - W tym zadaniu należy stworzyć podstronę generującą profil egzaminatora
+		 - Jeżeli ma do tego uprawnienia np. profil może być prywatny.
+	d)  System powinien wyświetlać listę użytkowników(egzaminatorów).
+	e)* Dodać możliwość przeszukiwania w systemie np. po wpisaniu imienia i nazwiska egzaminatora wyskakuje nam jego profil.
+	f) Dodanie możliwości drukowania harmonogramu egzaminu
+		 - Zastanowić się jak to można zrobić w PHP. Czy należy użyć dodatkowej biblioteki. Jeżeli tak to jakiej.
+	
+5. Stworzenie szkieletu bazodanowego
+	a) Stworzenie schematu bazy danych (5)
+		- Wymodelować schemat bazy np. przy pomocy programu Yedit.
+		- Skonsultować z zespołem.
+		- Skonsultowany projekt wyeksportować do pliku graficznego i umieścić w miejscu widocznym. dla wszystkich programistów(np. grupa na facebooku)
+	b
+	d) Stworzyć kod odpowiedzialny za tworzenie bazy danych. (8)
+	d) Stworzyć skrypt odpowiedzialny za instalację/reinstalację bazy danych dla systemu GNU/Linux.
+	d) Stworzyć skrypt odpowiedzialny za instalację/reinstalację bazy danych dla systemu Windows.
+	e) Dodać do bazy danych kilkua przykładowych danych. (1)
+		- Znów powinien być to skrypt powłoki, który w szybkim czasie i na wielu maszynach pozwoli nam testować naszą aplikację.
+		- Zastanowić się czy dane można generować przy pomocy programu.
+
+
+=========
+		
+5. Organizacja (Zadania pomocnicze)
+	- Zastanowić się nad możliwości organizacji spotkań deweloperskich poświęconych na kodzenie np. na uczelni
+	- Nie tworzyć nadmiarowych zadań. W pierwszej kolejności należy skupić się na minimalnej funkcjonalności.
+	- Rozwiązać problem braku serwera. (IBISNET)
+	- Zorganizować środowisko pracy (GIT lub SVN)
+	- Zorganizować program do zarządzania SCRUMEM
+		- Zastanawiałem się nad REDMINE z pluginem SCRUM -> Pytanie czy jesteśmy to w stanie gdzieś zainstalować

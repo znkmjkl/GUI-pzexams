@@ -1,0 +1,3 @@
+// Komedy, które należy wpisać podczas tworzenia bazy danych na serwerze OpenShift 
+mysql pzexams -u userName -p < Tables.sql
+mysql pzexams -u adminUTgh4El -p --default_character_set utf8 < Content.sql
