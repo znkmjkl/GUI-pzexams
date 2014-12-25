@@ -166,4 +166,58 @@ jQuery(document).ready(function ($) {
 
 	$("div").on("click", "a#back", getBack);
 
+	$(document).on('click', 'examDayButton', loadExamUnitList);
+
+	$('#examExchange').click(function() {
+		$('#examUnitTable').hide();
+		$('#examDayButton').show();
+	});
+
+
+(function($){
+	$.fn.styleddropdown = function(){
+		return this.each(function(){
+			var obj = $(this);
+			obj.find('.popupLink').click(function() {
+			obj.find('.list').fadeIn(200);
+			
+			$(document).keyup(function(event) {
+				if(event.keyCode == 27) {
+				obj.find('.list').fadeOut(200);
+				}
+			});
+			
+			obj.find('.list').hover(function(){ },
+				function(){
+					$(this).fadeOut(200);
+				});
+			});
+			
+			obj.find('.list li').click(function() {
+			obj.find('.popupLink')
+				.val($(this).html())
+				.css({
+					'background':'#fff',
+					'color':'#333'
+				});
+			obj.find('.list').fadeOut(200);
+			});
+		});
+	};
+})(jQuery);
+
+
+$(function(){
+	$('.exchangePopup').styleddropdown();
 });
+
+});
+
+function loadExamUnitList() {
+	$('#examDayButton').hide();
+	$('#examUnitTable').show();
+}
+
+
+
+

@@ -2,6 +2,6 @@
 <Database>
 	<Server>localhost</Server>
 	<User>root</User>
-	<Password>123456</Password>
+	<Password>root</Password>
 	<Name>pzexams</Name>
 </Database>

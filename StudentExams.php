@@ -186,7 +186,8 @@
 					echo "</div></div></td>";
 					// Wypisz się (Button z id egzaminu)
 					echo "<td class=\"text-center\">";
-					echo "<a class=\"btn btn-danger fake-center-button\" href=\"#\" role=\"button\" data-toggle=\"modal\" id=\"signOutGlyph\" data-target=\"#signOutModal\" title=\"Wypisz się\" value=\"".$exam->getID()."\"><i class=\"glyphicon glyphicon-remove\"></i></a>";
+					echo "<a style='margin-right: 0.3em;' class=\"btn btn-danger fake-center-button\" href=\"#\" role=\"button\" data-toggle=\"modal\" id=\"signOutGlyph\" data-target=\"#signOutModal\" title=\"Wypisz się\" value=\"".$exam->getID()."\"><i class=\"glyphicon glyphicon-remove\"></i></a>";
+					echo "<a class=\"btn btn-success fake-center-button\" href=\"#\" role=\"button\" data-toggle=\"modal\" id=\"examExchange\" data-target=\"#exchangeModal\" title=\"Wypisz się\" value=\"".$exam->getID()."\"><i class=\"glyphicon glyphicon-retweet\"></i></a>";
 					echo "</td>";
 				}elseif($total != $locked){
 					echo "<td  class=\"col-md-3\"><div class=\"progress fake-center\">";
@@ -219,5 +220,6 @@
 	include_once("lib/Dialog/StudentEditModal.php");
 	include_once("lib/Dialog/ExamSignOutButton.php");
 	include_once("lib/Dialog/ExamSignInButton.php");
+	include_once("lib/Dialog/ExamExchangeModal.php");
 	include("html/End.php");
 ?>

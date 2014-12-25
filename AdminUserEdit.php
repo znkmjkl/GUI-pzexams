@@ -94,7 +94,7 @@
 	<fieldset class="col-xs-12	col-sm-12	col-md-12">
 		<legend>Zmiana	hasła</legend>
 		<div class="form-group">
-			<label for="passwd" class="col-xs-2	col-sm-2	col-md-2	control-label">	Nowe	Hasło	</label>
+			<label for="passwd" class="col-xs-2	col-sm-2	col-md-2	control-label">Nowe hasło</label>
 			<div class="col-xs-4 col-sm-4 col-md-4">
 				<input type="password" required class="form-control	inputPassword" id="passwd" name="passwd" placeholder="Wprowadź Nowe Haslo" title="">
 			</div>
@@ -102,7 +102,7 @@
 			</span>
 		</div>
 		<div class="form-group">
-			<label for="passwd-repat" class="col-xs-2	col-sm-2	col-md-2	control-label">	Potwierdź	Nowe	Hasło	</label>
+			<label for="passwd-repat" class="col-xs-2	col-sm-2	col-md-2	control-label">Potwierdź nowe hasło</label>
 			<div class="col-xs-4	col-sm-4	col-md-4">
 				<input type="password" required class="form-control	inputPassword" id="passwd-repeat" placeholder="Powtórz Nowe Haslo" title="">
 			</div>
@@ -111,16 +111,16 @@
 		</div>
 		<div class="form-group">
 			<span class="col-xs-offset-2	col-sm-offset-2	col-md-offset-2	col-xs-2	col-sm-2	col-md-2">
-				<button type="submit" class="btn	btn-primary" name="submitButtonPassword" value="submit">Zmień	Hasło</button>
+				<button type="submit" class="btn	btn-primary" name="submitButtonPassword" value="submit">Zmień hasło</button>
 			</span>
 		</div>
 	</fieldset>
 </form>
 <form class="form-horizontal" role="form" id="firstname_form" method="post" action="controler/HandlingAdminEdit.php">
 	<fieldset class="col-xs-12	col-sm-12	col-md-12">
-		<legend>Zmiana	ustawień	użytkownika</legend>
+		<legend>Zmiana ustawień użytkownika</legend>
 		<div class="form-group">
-			<label for="firstname" class="col-xs-2	col-sm-2	col-md-2	control-label">Nowe	Imię</label>
+			<label for="firstname" class="col-xs-2	col-sm-2	col-md-2	control-label">Nowe	imię</label>
 			<div class="col-xs-4	col-sm-4	col-md-4">
 				<input type="text" class="form-control" id="firstname" placeholder="Wprowadź Imię" name="nameEdit" value="<?php	if(isset($_SESSION['nameEdit'])){	echo	$_SESSION['nameEdit'];	}	else	{	echo	'';	}?>">
 			</div>

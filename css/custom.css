@@ -247,3 +247,44 @@ a.bg-info:hover {
     text-decoration: none;
     background-color: #BFBFBF;
 }
+
+.exchangePopup { 
+    position:relative 
+}
+
+.exchangePopup .popupLink:hover {
+    cursor: pointer;
+}
+.exchangePopup>ul.list { 
+    display:none;
+    position:absolute; 
+    left:30px; 
+    top:-30px; 
+    z-index:999;
+    width: 300px;
+    margin: 0; 
+    padding: 10px; 
+    list-style:none;
+    background: #fff; 
+    color:#333;
+    -moz-border-radius:5px; 
+    -webkit-border-radius:5px; 
+    border-radius:5px;
+    -moz-box-shadow:0 0 5px #999; 
+    -webkit-box-shadow:0 0 5px #999; 
+    box-shadow:0 0 5px #999
+}
+
+.exchangePopup>ul.list:hover {
+    cursor: pointer;
+}
+
+.exchangePopup>ul.list li {
+    padding:10px;
+    border-bottom: solid 1px #ccc;
+}
+.exchangePopup>ul.list li:hover {
+    background:#428bca;
+    color:#fff;
+}
+.exchangePopup>ul.list li:last-child { border:none }
