@@ -183,7 +183,7 @@ jQuery(document).ready(function ($) {
 			
 			$(document).keyup(function(event) {
 				if(event.keyCode == 27) {
-				obj.find('.list').fadeOut(200);
+					obj.find('.list').fadeOut(200);
 				}
 			});
 			
@@ -205,6 +205,36 @@ jQuery(document).ready(function ($) {
 		});
 	};
 })(jQuery);
+
+
+$(document).on('click', '.list li', function() {
+
+	var hisClass = $(this).attr('class');
+	var hisHtml = $('tbody tr.' + hisClass + ' td.studentName').html();
+
+	var myHtml = $(this).closest('tr').find('.studentName').html();
+	var myOferts = $(this).closest('tr').find('.oferts').html();
+	var myClass = $(this).closest('tr').attr('class');
+
+	$('tr.' + myClass + ' .studentName').html(hisHtml);
+	$('tr.' + myClass + ' .oferts .ofertNr').removeClass('popupLink');
+	$('tr.' + myClass + ' .oferts .ofertNr').html(Number($('tr.' + myClass + ' .oferts .ofertNr').html()) - 1);
+	$('tr.' + myClass + ' .oferts .divPop').removeClass('exchangePopup');
+	$('tbody tr.' + hisClass + ' .studentName').html(myHtml);
+	$('tbody tr.' + hisClass + ' .oferts .ofertNr').addClass('popupLink');
+	$('tbody tr.' + hisClass + ' .oferts .divPop').addClass('exchangePopup');
+
+	$('li.' + hisClass).remove();
+
+	$('tr.' + hisClass).attr('style', 'font-weight: bold;');
+	$('tr.' + myClass).attr('style', '');
+
+	$('.list').fadeOut(200);
+
+	$(function(){
+		$('.exchangePopup').styleddropdown();
+	});
+});
 
 
 $(function(){

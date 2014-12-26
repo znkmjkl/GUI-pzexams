@@ -14,37 +14,40 @@
 						<table id='examUnitTable' class='table table-condensed table-bordered table-hover'>
 							<thead>
 								<tr>
-									<th class='col-md-5'>Godziny</th>
-									<th class='col-md-5'>Student</th>
-									<th>dw</th>
+									<th>Godziny</th>
+									<th>Student</th>
+									<th>Oferty zamiany</th>
 								</tr>
 							</thead>
 							<tbody>
-								<tr><td>9.45-10.00</td><td>Jan Nowak</td><td>1</td></tr>
-								<tr style='font-weight: bold;'><td>10.00-10.15</td><td>Kamil Malinowski</td>
-									<td>
-
-										<div class="exchangePopup">
-											<a name="test" class="popupLink" readonly="readonly" >3</a>
-											<ul class="list">
-												<li>9.45-10.00</li>
-												<li>10.30-10.45</li>
+								<tr class='record1'><td>9.45-10.00</td><td class='studentName'>Jan Nowak</td>
+									<td class='oferts'>
+										<span class="divPop">
+											<span name="test" class='ofertNr'>1</span>
+											<ul class="list" style='display: none;'>
+												<li class='record4'>10.30-10.45</li>
 											</ul>
-										</div>
+										</span>
+									</td>
+								</tr>
+
+								<tr class='record2' style='font-weight: bold;'><td>10.00-10.15</td><td class='studentName'>Kamil Malinowski</td>
+									<td class='oferts'>
+										<span class="divPop exchangePopup">
+											<span name="test" class="popupLink ofertNr">2</span>
+											<ul class="list">
+												<li class='record1'>9.45-10.00</li>
+												<li class='record4'>10.30-10.45</li>
+											</ul>
+										</span>
 
 									</td>
 								</tr>
-								<tr><td>10.15-10.30</td><td>Tomasz Krawiec</td><td>1</td></tr>
-								<tr><td>10.30-10.45</td><td>Grażyna Derp</td><td>1</td></tr>
+								<tr class='record3'><td>10.15-10.30</td><td class='studentName'>Tomasz Krawiec</td><td class='oferts'>0</td></tr>
+								<tr class='record4'><td>10.30-10.45</td><td class='studentName'>Grażyna Derp</td><td class='oferts'>0</td></tr>
 							</tbody>
 
-						</table>	
-
-
-						<ul id="contextMenu" class="dropdown-menu" role="menu" style="display:none" >
-						    <li><a tabindex="-1" href="#">9.45-10.00</a></li>
-						    <li><a tabindex="-1" href="#">10.30-10.45</a></li>
-						</ul>
+						</table>
 
 				</div>
 				<div id="signInFooter" class="modal-footer">
