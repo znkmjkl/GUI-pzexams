@@ -8,8 +8,8 @@ function validateRadio(obj) {
 			break;
 		}
 	}
-	if (checked == null) {
-		error.innerHTML = '<span style="background-color:#F13333;" class="badge pull-left ">!</span><span style="padding:5px"> Musisz zaznaczyć termin na który chcesz się zapisać.</span>'; 
+	if (checked === null) {
+		error.innerHTML = '<span style="background-color:#F13333;" class="badge pull-left ">!</span><span style="padding:5px"> Musisz zaznaczyć termin na który chcesz się zapisać.</span>';
 		return false;
 	}else{
 		error.innerHTML = "";
@@ -20,7 +20,7 @@ function validateRadio(obj) {
 jQuery(document).ready(function ($) {
 
 	function showEdit() {
-		$("div").off("click", "a#studentEditGlyph", showEdit)
+		$("div").off("click", "a#studentEditGlyph", showEdit);
 		$("#innerEStudentID").val($('#studentID').val());
 		$("#innerEStudentCode").val($('#studentCode').val());
 
@@ -214,7 +214,7 @@ $(document).on('click', '.list li', function() {
 
 	var myHtml = $(this).closest('tr').find('.studentName').html();
 	var myOferts = $(this).closest('tr').find('.oferts').html();
-	var myClass = $(this).closest('tr').attr('class');
+	var myClass = $(this).closest('tr').attr('class').split(' ')[0];
 
 	$('tr.' + myClass + ' .studentName').html(hisHtml);
 	$('tr.' + myClass + ' .oferts .ofertNr').removeClass('popupLink');
@@ -223,6 +223,8 @@ $(document).on('click', '.list li', function() {
 	$('tbody tr.' + hisClass + ' .studentName').html(myHtml);
 	$('tbody tr.' + hisClass + ' .oferts .ofertNr').addClass('popupLink');
 	$('tbody tr.' + hisClass + ' .oferts .divPop').addClass('exchangePopup');
+	$('tbody tr.' + hisClass).addClass('me');
+	$('tr.' + myClass).removeClass('me');
 
 	$('li.' + hisClass).remove();
 
@@ -234,8 +236,28 @@ $(document).on('click', '.list li', function() {
 	$(function(){
 		$('.exchangePopup').styleddropdown();
 	});
+
 });
 
+	$(document).on('click', '.oferts button', function() {
+		var ofertNr = $(this).parent().find('.ofertNr');
+		if(!$(this).hasClass('added')) {
+			ofertNr.html((Number(ofertNr.html()) + 1) + "<button title='Zgłoś chęć wymiany' class='btn btn-sm btn-danger glyphicon glyphicon-remove'></button>");
+			$(this).addClass('added');
+		}
+	});
+
+	$(document).on('mouseenter', '.oferts', function() {
+
+		var isAdded = $(this).find('button').hasClass('added');
+
+		if(!$(this).closest('tr').hasClass('me') && !isAdded)
+			$(this).find('button.btn-success').fadeIn(100);
+	});
+
+	$(document).on('mouseleave', '.oferts', function() {
+		$(this).find('button.btn-success').fadeOut(100);
+	});
 
 $(function(){
 	$('.exchangePopup').styleddropdown();
@@ -246,6 +268,7 @@ $(function(){
 function loadExamUnitList() {
 	$('#examDayButton').hide();
 	$('#examUnitTable').show();
+	$('.oferts button.btn-success').hide();
 }
 
 

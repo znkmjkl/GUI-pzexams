@@ -288,3 +288,9 @@ a.bg-info:hover {
     color:#fff;
 }
 .exchangePopup>ul.list li:last-child { border:none }
+
+.oferts button {
+    padding-top: 0.08em;
+    margin-left: 1em;
+    height: 1.5em;
+}

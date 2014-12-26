@@ -16,7 +16,7 @@
 								<tr>
 									<th>Godziny</th>
 									<th>Student</th>
-									<th>Oferty zamiany</th>
+									<th class='col-md-3'>Oferty zamiany</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -24,6 +24,7 @@
 									<td class='oferts'>
 										<span class="divPop">
 											<span name="test" class='ofertNr'>1</span>
+											<button title='Zgłoś chęć wymiany' class='btn btn-sm btn-success glyphicon glyphicon-plus' style='display: none;'></button>
 											<ul class="list" style='display: none;'>
 												<li class='record4'>10.30-10.45</li>
 											</ul>
@@ -31,10 +32,11 @@
 									</td>
 								</tr>
 
-								<tr class='record2' style='font-weight: bold;'><td>10.00-10.15</td><td class='studentName'>Kamil Malinowski</td>
+								<tr class='record2 me' style='font-weight: bold;'><td>10.00-10.15</td><td class='studentName'>Kamil Malinowski</td>
 									<td class='oferts'>
 										<span class="divPop exchangePopup">
 											<span name="test" class="popupLink ofertNr">2</span>
+											<button title='Zgłoś chęć wymiany' class='btn btn-sm btn-success glyphicon glyphicon-plus' style='display: none;'></button>
 											<ul class="list">
 												<li class='record1'>9.45-10.00</li>
 												<li class='record4'>10.30-10.45</li>
@@ -43,8 +45,8 @@
 
 									</td>
 								</tr>
-								<tr class='record3'><td>10.15-10.30</td><td class='studentName'>Tomasz Krawiec</td><td class='oferts'>0</td></tr>
-								<tr class='record4'><td>10.30-10.45</td><td class='studentName'>Grażyna Derp</td><td class='oferts'>0</td></tr>
+								<tr class='record3'><td>10.15-10.30</td><td class='studentName'>Tomasz Krawiec</td><td class='oferts'><span name="test" class='ofertNr'>0</span><button title='Zgłoś chęć wymiany' class='btn btn-sm btn-success glyphicon glyphicon-plus' style='display: none;'></button></td></tr>
+								<tr class='record4'><td>10.30-10.45</td><td class='studentName'>Grażyna Derp</td><td class='oferts'><span name="test" class='ofertNr'>0</span><button title='Zgłoś chęć wymiany' class='btn btn-sm btn-success glyphicon glyphicon-plus' style='display: none;'></button></td></tr>
 							</tbody>
 
 						</table>
