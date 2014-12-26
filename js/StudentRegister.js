@@ -250,6 +250,7 @@ $(document).on('click', '.list li', function() {
 			ofertNr.html(Number(ofertNr.html()) + 1);
 			$(this).toggleClass('btn-success btn-danger');
 			$(this).toggleClass('glyphicon-remove glyphicon-plus');
+			$(this).attr('title', 'Cofnij ofertę wymiany');
 		}
 	});
 
@@ -260,6 +261,7 @@ $(document).on('click', '.list li', function() {
 		$(this).removeClass('added');
 		$(this).toggleClass('btn-success btn-danger');
 		$(this).toggleClass('glyphicon-remove glyphicon-plus');
+		$(this).attr('title', 'Zgłoś ofertę wymiany');
 	});
 
 	$(document).on('mouseenter', '.oferts', function() {
@@ -269,9 +271,12 @@ $(document).on('click', '.list li', function() {
 		if(!isAdded) {
 			if(!$(this).closest('tr').hasClass('me')) {
 				$(this).find('button.btn-success').fadeIn(100);
-			} else {
+			} 
+			else {
 				if(!($('#showOferts').length > 0)) {
-					$(this).html($(this).html() + '<a id="showOferts" style="cursor: pointer; margin-left: 0.6em;">Pokaż oferty</a>');
+					if(!($('#showOferts').length > 0)) {
+						$('.popupLink').append('<span id="showOferts"> - pokaż oferty</span>');
+					}
 				} else {
 					$('#showOferts').show();
 				}
