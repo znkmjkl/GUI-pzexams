@@ -179,7 +179,10 @@ jQuery(document).ready(function ($) {
 		return this.each(function(){
 			var obj = $(this);
 			obj.find('.popupLink').click(function() {
-			obj.find('.list').fadeIn(200);
+
+			if($(this).closest('tr').hasClass('me')) {
+				obj.find('.list').fadeIn(200);
+			}
 			
 			$(document).keyup(function(event) {
 				if(event.keyCode == 27) {
@@ -239,24 +242,49 @@ $(document).on('click', '.list li', function() {
 
 });
 
-	$(document).on('click', '.oferts button', function() {
+	$(document).on('click', '.oferts button.btn-success', function() {
 		var ofertNr = $(this).parent().find('.ofertNr');
+
 		if(!$(this).hasClass('added')) {
-			ofertNr.html((Number(ofertNr.html()) + 1) + "<button title='Zgłoś chęć wymiany' class='btn btn-sm btn-danger glyphicon glyphicon-remove'></button>");
 			$(this).addClass('added');
+			ofertNr.html(Number(ofertNr.html()) + 1);
+			$(this).toggleClass('btn-success btn-danger');
+			$(this).toggleClass('glyphicon-remove glyphicon-plus');
 		}
+	});
+
+	$(document).on('click', '.oferts button.btn-danger', function() {
+		var ofertNr = $(this).parent().find('.ofertNr');
+
+		ofertNr.html(Number(ofertNr.html()) - 1);
+		$(this).removeClass('added');
+		$(this).toggleClass('btn-success btn-danger');
+		$(this).toggleClass('glyphicon-remove glyphicon-plus');
 	});
 
 	$(document).on('mouseenter', '.oferts', function() {
 
 		var isAdded = $(this).find('button').hasClass('added');
 
-		if(!$(this).closest('tr').hasClass('me') && !isAdded)
-			$(this).find('button.btn-success').fadeIn(100);
+		if(!isAdded) {
+			if(!$(this).closest('tr').hasClass('me')) {
+				$(this).find('button.btn-success').fadeIn(100);
+			} else {
+				if(!($('#showOferts').length > 0)) {
+					$(this).html($(this).html() + '<a id="showOferts" style="cursor: pointer; margin-left: 0.6em;">Pokaż oferty</a>');
+				} else {
+					$('#showOferts').show();
+				}
+			}
+		}
+
 	});
 
 	$(document).on('mouseleave', '.oferts', function() {
 		$(this).find('button.btn-success').fadeOut(100);
+		if($(this).closest('tr').hasClass('me')) {
+			$('#showOferts').hide();
+		}
 	});
 
 $(function(){

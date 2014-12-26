@@ -294,3 +294,8 @@ a.bg-info:hover {
     margin-left: 1em;
     height: 1.5em;
 }
+
+.oferts a:hover {
+    text-decoration: none;
+}
+

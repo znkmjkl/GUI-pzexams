@@ -45,8 +45,8 @@
 
 									</td>
 								</tr>
-								<tr class='record3'><td>10.15-10.30</td><td class='studentName'>Tomasz Krawiec</td><td class='oferts'><span name="test" class='ofertNr'>0</span><button title='Zgłoś chęć wymiany' class='btn btn-sm btn-success glyphicon glyphicon-plus' style='display: none;'></button></td></tr>
-								<tr class='record4'><td>10.30-10.45</td><td class='studentName'>Grażyna Derp</td><td class='oferts'><span name="test" class='ofertNr'>0</span><button title='Zgłoś chęć wymiany' class='btn btn-sm btn-success glyphicon glyphicon-plus' style='display: none;'></button></td></tr>
+								<tr class='record3'><td>10.15-10.30</td><td class='studentName'>Tomasz Krawiec</td><td class='oferts'><span class="divPop"><span name="test" class='ofertNr'>0</span><button title='Zgłoś chęć wymiany' class='btn btn-sm btn-success glyphicon glyphicon-plus' style='display: none;'></button></span></td></tr>
+								<tr class='record4'><td>10.30-10.45</td><td class='studentName'>Grażyna Derp</td><td class='oferts'><span class="divPop"><span name="test" class='ofertNr'>0</span><button title='Zgłoś chęć wymiany' class='btn btn-sm btn-success glyphicon glyphicon-plus' style='display: none;'></button></span></td></tr>
 							</tbody>
 
 						</table>
