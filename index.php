@@ -64,9 +64,7 @@
 			<button	type="submit" class="btn	btn-success	btn-lg	btn-block"	style="margin-top:20px;	margin-bottom:5px;"><b>Zaloguj</b></button>
 		</form>
 	</div>	
-	<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
 
 <?php 
-	echo md5("test123");
 	include("html/End.php");
 ?>

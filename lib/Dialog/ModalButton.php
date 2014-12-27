@@ -1,6 +1,8 @@
-	<button class="btn btn-success btn-lg" data-toggle="modal" id="addExamDayGlyph" data-target="#myModal" title="Dodaj termin">
-  		<i class="glyphicon glyphicon-plus" style="font-size:30px; font-weight:bold;"></i>
-	</button>
+	<div data-toggle="tooltip" data-placement="bottom" title="Dodaj nowy termin" style="width;61px; display:inline-block;">
+    <button class="btn btn-success btn-lg" data-toggle="modal" id="addExamDayGlyph" data-target="#myModal">
+  		  <i class="glyphicon glyphicon-plus" style="font-size:30px; font-weight:bold;"></i>
+	 </button>
+  </div>
 	
 	<div class="modal fade modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   		<div class="modal-dialog modal-sm">
@@ -12,7 +14,7 @@
       			<form name="modalForm" class="form-signin form-horizontal" id="addExamForm" data-toggle="validator" role="form" style="margin:10px; margin-right:10px;margin-left:10px" method="post" action="">
       				<div class="modal-body">
       					<div class="form-group" id="duration_group">
-							<label for="duration" class="col-sm-5 control-label">Czas egzaminu</label>
+							<label for="duration" class="col-sm-5 control-label" data-toggle="tooltip" data-placement="bottom" title="Czas przeznaczony na 1 osobe">Czas egzaminu</label>
 							<div class="col-sm-3">
 								<input name="duration" type="number" class="form-control" id="duration" placeholder="" maxlength="2" value="">
 							</div>
@@ -21,18 +23,18 @@
       					<div class="form-group">
                 			<label for="dtp_input2" class="col-sm-5 control-label">Dzień</label>
                 			<div class="input-group date form_date col-md-6" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
-                    			<input name="date" class="form-control"  id="exam-date" size="16" type="text" value="" readonly>
-                    			<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-								<span class="input-group-addon"><span class="glyphicon glyphicon-calendar glyphicon-nonescaped"></span></span>
+                    			<input name="date" class="form-control" placeholder="Wybierz dzień" id="exam-date" size="16" type="text" value="" readonly>
+                    			<span class="input-group-addon"><span class="glyphicon glyphicon-remove"  data-toggle="tooltip" data-placement="bottom" title="Reset"></span></span>
+								<span class="input-group-addon"><span class="glyphicon glyphicon-calendar glyphicon-nonescaped"  data-toggle="tooltip" data-placement="bottom" title="Kalendarz"></span></span>
                 			</div>
 							<input type="hidden" id="dtp_input2" value="" /><br/>
             			</div>
 						
-						<div class="form-group">
+						<div class="form-group">                                                 
                 			<label for="dtp_input3" class="col-sm-5 control-label">Godzina rozpoczęcia</label>
                 			<div class="input-group date form_time col-md-6" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
-                    			<input name="bHour" class="form-control" id="start-hour" size="16" type="text" value="" readonly>
-                    			<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                    			<input name="bHour" class="form-control" placeholder="Czas rozp" id="start-hour" size="16" type="text" value="" readonly>
+                    			<span class="input-group-addon"><span class="glyphicon glyphicon-remove"  data-toggle="tooltip" data-placement="bottom" title="Reset"></span></span>
 								<span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
                 			</div>
 							<input type="hidden" id="dtp_input3" value="" /><br/>
@@ -40,8 +42,8 @@
             			<div class="form-group">
 	                		<label for="dtp_input3" class="col-sm-5 control-label">Godzina zakończenia</label>
     	            		<div class="input-group date form_time col-md-6" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
-        	            		<input name="eHour" class="form-control" id="end-hour" size="16" type="text" value="" readonly>
-            	        		<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+        	            		<input name="eHour" class="form-control" placeholder="Casz końcowy" id="end-hour" size="16" type="text" value="" readonly>
+            	        		<span class="input-group-addon"><span class="glyphicon glyphicon-remove"  data-toggle="tooltip" data-placement="bottom" title="Reset"></span></span>
 								<span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
                 			</div>
 							<input type="hidden" id="dtp_input3" value="" /><br/>

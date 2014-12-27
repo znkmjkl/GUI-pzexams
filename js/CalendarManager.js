@@ -318,7 +318,7 @@ jQuery( document ).ready(function( $ ) {
 			end = '						</tbody>' +
 				  '				</table>' +
 				  '			</div>'+
-				  '			<button type="button" class="btn btn-danger" id="removeDayButton" style="float:right;" name="'+ date + '">' +
+				  '			<button type="button" class="btn btn-danger" id="removeDayButton" style="float:right;" name="'+ date + '"  data-toggle="tooltip" data-placement="bottom" title="Usuń ten dzień">' +
 				  '				<i class="glyphicon glyphicon-minus" style="font-size:20px; font-weight:bold;"></i>'+
 				  '			</button>'+
 				  '		</div>'+
@@ -350,7 +350,7 @@ jQuery( document ).ready(function( $ ) {
 	
 	SimpleDayControl.prototype.controlAddExamUnit = function ( startTime , endTime , name , surname ) { 
 			examUnit =	'<tr>'
-						+ '		<td><i style="cursor:pointer;" id="removeRecordIcon" class="glyphicon glyphicon-trash"></i></td> '
+						+ '		<td><i style="cursor:pointer;" id="removeRecordIcon" class="glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="left" title="Usuń tą godzine"></i></td> '
 						+ '		<td style="white-space:nowrap">'+startTime+'-'+endTime+'</td> ' 
 						+ '</tr> ' ; 
 			return examUnit ; 
@@ -377,6 +377,8 @@ jQuery( document ).ready(function( $ ) {
 			} 
 			htmlControl += this.controlAddSeparator () ;
 			htmlControl += this.controlStyleEnd (this.day) ;
+			
+			console.log("2");
 		    // document.write ( htmlControl  ); 
 			return htmlControl ; 
 	} ;  
@@ -419,7 +421,8 @@ jQuery( document ).ready(function( $ ) {
 				i++ ; 
 			} 
 			htmlControl += this.controlAddSeparator () ;
-			htmlControl += this.controlStyleEnd (this.day) ;
+			htmlControl += this.controlStyleEnd (this.day) ;			
+			console.log("1");
 		    // document.write ( htmlControl  ); 
 			return htmlControl ; 
 	} ;  
@@ -447,13 +450,18 @@ jQuery( document ).ready(function( $ ) {
 				} else { 
 					calendarDayControl = new SimpleDayControl ( day , this.examDays[day]) ;
 				} 
-				calendarControl+=calendarDayControl.printControl();
+				calendarControl+=calendarDayControl.printControl();				
 				daysCounter++; 
 			} 
 			
 			calendarControl+=this.addRibbonEnd ();
 		
 			$("#calendar-control").html(calendarControl);
+			$('[data-toggle="tooltip"]').tooltip()
+			$('[data-toggle="tooltip"]').tooltip({'placement': 'bottom'});
+			$('[tooltip-placement="top"]').tooltip({'placement': 'top'});
+			$('[tooltip-placement="left"]').tooltip({'placement': 'left'});
+			$('[tooltip-placement="right"]').tooltip({'placement': 'right'});
 		} ; 
 		
 		this.addRibbonStart = function ( ) { 

@@ -8,11 +8,11 @@
 			</button>
 
 			<ul	class="nav	navbar-nav	pull-left"	style="padding-right:	0px;">
-			<li><a	id="home"	class="navbar-brand"	href="index.php" style='padding: 12px;'><img	style	=	"width:	160px"	src="img/logo_button.png"></a></li>
+			<li><a	id="home"	class="navbar-brand"	href="index.php" style='padding: 12px;'><img	style	=	"width:	160px"	src="img/logo_button.png" data-toggle='tooltip' data-placement='bottom' title='Strona główna'></a></li>
 			<!--  -->
 			<?php	if(isset($_SESSION['USER'])	&&	$_SESSION['USER']	!=	""){?>
-				<li><a	class="navbar-brand"	href="Help.php">Pomoc</a></li>
-				<li><a	class="navbar-brand"	href="Contact.php">Kontakt</a></li>
+				<li><a	class="navbar-brand"	href="Help.php" data-toggle='tooltip' data-placement='bottom' title='Tu uzyskasz informacje jak korzystać z serwisu'>Pomoc</a></li>
+				<li><a	class="navbar-brand"	href="Contact.php" data-toggle='tooltip' data-placement='bottom' title='Na tej stronie możesz skontaktować się z administracją'>Kontakt</a></li>
 			<?php } ?>
 			</ul>
 			<?php
