@@ -12,8 +12,8 @@
 </div>
 <?php
 	echo "<h3 style=\"text-align: center; margin-top: 10px;\">";
-	if (isset($previous)) {
-		echo '<a href="$previous">Powrót do poprzedniej strony</a>';
+	if (isset($previous)) {		
+		echo '<a href="'.$previous.'">Powrót do poprzedniej strony</a>';
 	} else {
 		echo '<a href="index.php">Powrót do strony głównej</a>';
 	}

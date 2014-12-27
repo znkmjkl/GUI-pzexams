@@ -33,7 +33,7 @@
 		finish();
 		return;
 	}
-	
+?><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button><?php	
 	date_default_timezone_set('Europe/Warsaw');
 	$currentDate = date("Y-m-d");
 		
@@ -83,7 +83,7 @@
 				<th>Nazwa</th>
 				<th style="text-align: center">Data rozpoczęcia<i class="glyphicon glyphicon-chevron-down" style="margin-left: 5px"></i></th>
 				<th style="text-align: center">Data zakończenia</th>
-				<th style="text-align: center" title="Zapisani studenci / Wprowadzeni studenci / Liczba miejsc">Zapełnienie</th>
+				<th style="text-align: center"><span data-toggle="tooltip" data-placement="top" title="Zapisani studenci / Wprowadzeni studenci / Liczba miejsc">Zapełnienie</span></th>
 				<th style="text-align: center">Aktywny</th>
 				<th style="text-align: center">Operacje</th>
 				<th style="text-align: center">Aktywacja</th>
@@ -149,7 +149,7 @@
 		}
 		
 		// Populating
-		echo "<td style=\"text-align: center\"><span title=\"Liczba zapisanych studentów\">" . ExamUnitDatabase::countLockedExamUnits($id)  . "</span>/<span title=\"Liczba studentów\">" . RecordDatabase::countStudentsByExam($id) . "</span>/<span title=\"Liczba miejsc\">" . ExamUnitDatabase::countExamUnits($id) . "</span></td>";
+		echo "<td style=\"text-align: center\"><span data-toggle='tooltip' data-placement='top' title=\"Liczba zapisanych studentów\">" . ExamUnitDatabase::countLockedExamUnits($id)  . "</span>/<span data-toggle='tooltip' data-placement='top' title=\"Liczba studentów\">" . RecordDatabase::countStudentsByExam($id) . "</span>/<span data-toggle='tooltip' data-placement='top' title=\"Liczba wszystkich miejsc\">" . ExamUnitDatabase::countExamUnits($id) . "</span></td>";
 		
 		// Activated
 		echo "<td id=\"row-activated-id-" . $id . "\" style=\"text-align: center;\">";
@@ -162,19 +162,19 @@
 		
 		// Options
 		echo "<td style=\"text-align: center;\">" .
-			 "<a href=\"ExamEdit.php?examID=" . $id . "\" id=\"row-edit-id-" . $id . "\"><i class=\"glyphicon glyphicon-pencil\" style=\"margin-right: 10px;\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Edytuj egzamin\"></i></a>" . 
-			 "<a href=\"ExamStudentsList.php?examID=" . $id . "\" id=\"row-user-list-id-" . $id . "\" style=\"cursor: pointer;\"><i class=\"glyphicon glyphicon-th-list\" style=\"margin-right: 10px;\" title=\"Pokaż listę studentów\"></i></a>" .
-			 "<a id=\"row-delete-id-" . $id . "\" style=\"cursor: pointer;\" ><i class=\"glyphicon glyphicon-trash\" title=\"Usuń egzamin\"></i></a>";
+			 "<a href=\"ExamEdit.php?examID=" . $id . "\" id=\"row-edit-id-" . $id . "\"><i class=\"glyphicon glyphicon-pencil\" style=\"margin-right: 10px;\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"Edycja egzamin\"></i></a>" . 
+			 "<a href=\"ExamStudentsList.php?examID=" . $id . "\" id=\"row-user-list-id-" . $id . "\" style=\"cursor: pointer;\"><i class=\"glyphicon glyphicon-th-list\" style=\"margin-right: 10px;\" data-toggle='tooltip' data-placement='top' title='Pokaż listę studentów'></i></a>" .
+			 "<a id=\"row-delete-id-" . $id . "\" style=\"cursor: pointer;\" ><i class=\"glyphicon glyphicon-trash\" data-toggle='tooltip' data-placement='right' title='Usuń ten egzamin'></i></a>";
 		
 		echo "</td>";
 		
 		// Activation
 		echo "<td style=\"text-align: center;\">";
 		if (!$activated) {
-			echo "<button type=\"button\" id=\"row-activate-button-id-" . $id . "\" class=\"btn btn-success dropdown-toggle btn-sm\" style=\"width: 90px\" value=\"0\"><b>Aktywuj</b></button>";
+			echo "<button type=\"button\" id=\"row-activate-button-id-" . $id . "\" class=\"btn btn-success dropdown-toggle btn-sm\" style=\"width: 90px\" value=\"0\" data-toggle='tooltip' data-placement='right' title='Studenci będą mogli się zapisać'><b>Aktywuj</b></button>";
 		}
 		else {
-			echo "<button type=\"button\" id=\"row-activate-button-id-" . $id . "\" class=\"btn btn-danger dropdown-toggle btn-sm\" style=\"width: 90px\" value=\"1\"><b>Dezaktywuj</b></button>";
+			echo "<button type=\"button\" id=\"row-activate-button-id-" . $id . "\" class=\"btn btn-danger dropdown-toggle btn-sm\" style=\"width: 90px\" value=\"1\" data-toggle='tooltip' data-placement='right' title='Zapisy studentów będą wyłączone'><b>Dezaktywuj</b></button>";
 		}
 		echo "</td>";
 		

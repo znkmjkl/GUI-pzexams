@@ -4,7 +4,13 @@
 	$title = "$appName - Pomoc";
 	include("html/Begin.php");
 ?> 
+<?php	if(!isset($_SESSION['USER']) || $_SESSION['USER'] == ''){
+	header('Location: 403.php');
+	ob_end_flush();
+	return;
 
+}
+?>
 <div class="container"> 
 	<h2>Obsługiwane domeny</h2>
 	<hr/>

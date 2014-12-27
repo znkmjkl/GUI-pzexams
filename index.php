@@ -4,6 +4,15 @@
 	$title = "$appName - Strona Główna";
 	$scriptsDefer = array("js/index.js");
 	include("html/Begin.php");	
+
+
+
+	if(isset($_SESSION['USER']) && $_SESSION['USER'] != ''){
+		header('Location: UserSite.php');
+		ob_end_flush();
+		return;
+	}
+
 	if (isset($_SESSION['formSuccessCode'])) {
 		echo '<div class="alert alert-success">';
 		echo '<a href="#" class="close" data-dismiss="alert"> &times; </a>'; 
@@ -41,9 +50,9 @@
 ?>
 
 <div class="container">
-	<div class="col-md-4 col-md-offset-4" style="border: 1px solid black;">
-		<form class="form-signin" role="form" style="margin-right:10px;margin-left:10px;" method="post"	action="controler/LogIn.php">
-			<h3	style="text-align:center;	font-weight:bold;	padding-bottom:15px;">Logowanie	do	systemu</h3>
+	<div class="col-md-4 col-md-offset-4" style="height:75vh;">
+		<form class="form-signin" role="form" style="margin-right:10px;margin-left:10px; margin-top:40%" method="post"	action="controler/LogIn.php">
+			<h3	style="text-align:center;	font-size:27px; font-weight:bold;	padding-bottom:15px;">Logowanie	do systemu</h3>
 			
 			<input type="email" name="email" class="form-control" placeholder="Adres e-mail" required	autofocus style="margin-bottom:3px;">
 			
@@ -52,10 +61,12 @@
 			<label class="">
 				<a href="ForgottenPassword.php">Zapomniałeś hasła?</a>
 			</label>
-			<button	type="submit"	class="btn	btn-success	btn-lg	btn-block"	style="margin-top:20px;	margin-bottom:5px;"><b>Zaloguj</b></button>
+			<button	type="submit" class="btn	btn-success	btn-lg	btn-block"	style="margin-top:20px;	margin-bottom:5px;"><b>Zaloguj</b></button>
 		</form>
 	</div>	
+	<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
 
 <?php 
+	echo md5("test123");
 	include("html/End.php");
 ?>

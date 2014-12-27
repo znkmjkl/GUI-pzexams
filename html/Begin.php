@@ -24,6 +24,7 @@
 		
 		<script type="text/javascript" src="js/Lib/bootstrap-datetimepicker.js" charset="UTF-8"></script>
 		<script type="text/javascript" src="js/Lib/bootstrap-datetimepicker.pl.js" charset="UTF-8"></script>
+		<!--<script type="text/javascript" src="js/global.js" charset="UTF-8"></script>-->
 		<?php
 			if (isset($csses)) {
 				foreach ($csses as $value) {

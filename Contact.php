@@ -5,6 +5,12 @@
 	$scripts = array("js/Lib/jquery.validate.min.js");
 	include("html/Begin.php");
 
+	if(!isset($_SESSION['USER']) || $_SESSION['USER'] == ''){
+		header('Location: 403.php');
+		ob_end_flush();
+		return;
+	}
+
 	if (isset($_SESSION['contactFormErrorCode'])) {
 		echo '<div class="alert alert-danger">' ;
 		echo '<a href="#" class="close" data-dismiss="alert"> &times; </a>' ; 

@@ -298,4 +298,6 @@ a.bg-info:hover {
 .oferts a:hover {
     text-decoration: none;
 }
-
+span[data-toggle='tooltip']{
+    cursor:pointer;
+}
