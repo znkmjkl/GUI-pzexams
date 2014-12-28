@@ -24,6 +24,10 @@
 		color:red;
 		font-weight:bold;
 	}
+	#top-menu li{
+		font-size:1.05em;
+		padding-bottom:5px;		
+	}
 	a:hover, a:visited, a:focus{
 		text-decoration: none;
 	}
@@ -62,7 +66,7 @@
 		<li><a href="#lista_studentow_dla_egzaminu">Lista studentów przypisanych do egzaminu, wysłanie kodów</a></li>
 		<li><a href="#dodaj_kolejnych_do_egzaminu">Dodanie nowych osób do egzaminu</a></li>
 		<li><a href="#edycja_egzaminu">Edycja egzaminu</a></li>
-		<li><a href="#widok_egzaminu">XXXXX widok egzaminu</a></li>
+		<li><a href="#widok_egzaminu">Widok egzaminu</a></li>
 		<li><a href="#lista_archiwalna">Lista archiwalna egzaminów</a></li>
 		<li><a href="#edytuj_profil">Edycja danych profilu</a></li>
 		<li><a href="#kontaktowy">Formularz kontaktowy</a></li>
@@ -149,6 +153,14 @@
 	<h2 style="margin-top:80px;">Edycja egzaminu</h2>		
 	<hr/>
 	<img src="img/help/04_edytuj_egzamin.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
+	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
+</div>
+
+<div class="container col-md-9 col-md-offset-3" id="widok_egzaminu">
+	<a name="widok_egzaminu"></a>
+	<h2 style="margin-top:80px;">Widok egzaminu</h2>		
+	<hr/>
+	<img src="img/help/widok_egzaminu.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
 	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
 </div>
 
