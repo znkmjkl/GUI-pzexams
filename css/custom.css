@@ -17,6 +17,9 @@ body {
 
 #content_wrapper {
     padding-bottom: 100px;
+    .panel{
+        background: rgba(250, 250, 250, 1.0);
+    }
 }
 
 a#contact, a#authors, a#help, a#licence {

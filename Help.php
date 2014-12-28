@@ -79,7 +79,9 @@
 	<h2 style="margin-top:80px;">Strona główna użytkownika</h2>		
 	<hr/>
 	<img src="img/help/02_po_zalogowaniu.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
-	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
+	<p class="col-xs-4 col-sm-4 col-md-4">Jest to strona, która na która jesteśmy przenoszeni od razu
+	po zalogowaniu. <br/><br/>Zawiera informacje statystyczne o wszystkich egzaminach jakie dotychczas
+	były wprowadzane do systemu.</p>
 </div>
 
 <div class="container col-md-9 col-md-offset-3" id="nowy_egzamin">
@@ -87,7 +89,10 @@
 	<h2 style="margin-top:80px;">Dodaj egzamin</h2>		
 	<hr/>
 	<img src="img/help/03_dodaj_egzamin.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
-	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
+	<p class="col-xs-4 col-sm-4 col-md-4">Po wybraniu pozycji "Dodaj egzamin" z menu, będzie można utworzyć
+	nowy egzamin.  <br/><br/> W pierwszym etapie tworzenia egzaminu należy wprowadzić <b>nazwę</b> oraz
+	<b>czas trwania</b>. Można od razu wprowadzić terminy (można to później ustawić), aby to zrobic
+	należy kliknąć przycisk <b>+</b> a następnie wypełnić poprawnie pola w formularzu.</p>
 </div>
 
 <div class="container col-md-9 col-md-offset-3" id="dodaj_termin">
@@ -95,9 +100,15 @@
 	<h2 style="margin-top:80px;">Dodawanie terminu(dnia) egzaminu</h2>		
 	<hr/>
 	<img src="img/help/03_dodawanie_terminu.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
-	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
+	<p class="col-xs-4 col-sm-4 col-md-4">By wprowadzić nowy termin egzaminu należy
+	poprawnie uzupełnić formularz pokazany po lewej stronie. <br/><br/>Jest tu podany <b>domyślny czas egzaminu</b> (który wcześniej
+	został ustawiony). <br/>Następnymi polami są - <b>data egzamin, data rozpoczęcia i zakończenia</b>. Dane do tych pól 
+	wypełnia się przy pomocy kalendarza, który pojawia się po kliknięciu w pole lub ikonkę z prawej strony.</p>
 	<img src="img/help/03_termin_dodano.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
-	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
+	<p class="col-xs-4 col-sm-4 col-md-4"><br/><br/><br/><br/>Po wypełnieniu formularza pokazuję się na stronie okienko w którym, 
+	wygenerowane zostaną wszystkie godziny egzaminu w danym terminie. <br/><br/>
+	Można je pojedynczo usuwać (poprzez kliknięcie ikonki z lewej strony) lub usunąć cały dzień (klikając
+	na znak "<b>-</b>" na dole)</p>
 </div>
 
 <div class="container col-md-9 col-md-offset-3" id="dodawanie_studentow1">
@@ -129,7 +140,16 @@
 	<h2 style="margin-top:80px;">Lista aktualnych egzaminów</h2>		
 	<hr/>
 	<img src="img/help/04_lista_aktualnych.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
-	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
+	<p class="col-xs-4 col-sm-4 col-md-4">Na tej stronie widoczne są wszystkie egzaminy, których data
+	zakończenia nie mineła. <br/><br/>
+	Na <b>zielono</b> są oznaczone egzaminy, do których już przypisano studnentów i są wprowadzone jakieś
+	terminy. <br/>
+	Na <b>zółto</b> oznaczono egzaminy, które nie mają jeszcze terminów.
+	<br/><br/>
+	Dostępne są następujące operacje: <b>edycja</b>, <b>pokaż listę studentów</b> oraz <b>usuń egzamin</b>.
+	<br/><br/>
+	Po kliknięciu na <b>nazwę egzaminu</b> zostaniemy przeniesieni do <u>widoku egzaminu</u>.
+	</p>
 </div>
 
 <div class="container col-md-9 col-md-offset-3" id="lista_studentow_dla_egzaminu">
@@ -137,7 +157,14 @@
 	<h2 style="margin-top:80px;">Lista studentów przypisanych do egzaminu, wysyłanie kodów studentom</h2>		
 	<hr/>
 	<img src="img/help/04_lista_studentow.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
-	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
+	<p class="col-xs-4 col-sm-4 col-md-4">Na tej stronie widoczna jest lista studentów, których przypisano
+	do danego egzaminu. <u>Żeby wejść na tą strone egzamin musi być deaktywowany.</u><br/>
+	Na tej stronie można wykonać wiele operacji:<br/><br/>
+	<b>-</b> wysłanie emaila z linkiem do egzaminu do jednego/wszystkich studenta/ów<br/>
+	<b>-</b> dodać nową listę ze studentami (możliwośc ustawienia parsowania)<br/>
+	<b>-</b> usunięcie studenta z listy<br/>
+	<b>-</b> wygenerowanie pdfa z listą studentów<br/>
+	
 </div>
 
 <div class="container col-md-9 col-md-offset-3" id="dodaj_kolejnych_do_egzaminu">
@@ -153,7 +180,13 @@
 	<h2 style="margin-top:80px;">Edycja egzaminu</h2>		
 	<hr/>
 	<img src="img/help/04_edytuj_egzamin.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
-	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
+	<p class="col-xs-4 col-sm-4 col-md-4">Strona pozwala na edycje, wcześniej utworzonego egzaminu.
+	<u>By móc skorzystać z edycji, egzamin musi być <b>nieaktywny</b></u><br/>
+	Dostępna jest zmiana:<b>nazwy</b>, <b>domyślnego czasu</b> oraz <b>terminów</b> wraz z <b>godzinami</b> egzaminu.
+	<br/><br/><u><b>Uwaga!</b> Zmiany dokonane na harmonogramie (terminach) egzaminu są zapisywane w czasie rzeczywistym do bazy.
+	Natomiast edycja danych podstawowych wymaga potwierdzenia zmian.</u>
+	</p>
+
 </div>
 
 <div class="container col-md-9 col-md-offset-3" id="widok_egzaminu">
@@ -161,7 +194,10 @@
 	<h2 style="margin-top:80px;">Widok egzaminu</h2>		
 	<hr/>
 	<img src="img/help/widok_egzaminu.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
-	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
+	<p class="col-xs-4 col-sm-4 col-md-4">Widok egzaminu zawiera wszystkie terminy z godzinami oraz 
+	studentów, którzy już zdążyli się zapisać na daną godzinę. <br/>Udostępniono możliwośc pobrania pdfu z
+	listą osób zapisanych (pełny/niepełny - wszystkie godziny/tylko zapisani studenci).	
+	</p>
 </div>
 
 <div class="container col-md-9 col-md-offset-3" id="lista_archiwalna">
@@ -169,7 +205,8 @@
 	<h2 style="margin-top:80px;">Lista archiwalna egzaminów</h2>		
 	<hr/>
 	<img src="img/help/05_archiwalne.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
-	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
+	<p class="col-xs-4 col-sm-4 col-md-4">Strona zawiera liste egzaminów, których data końcowa już mineła.
+	<br/>Na tej stronie można jedynie wejśc w <b>widok egzaminu</b>.</p>
 </div>
 
 <div class="container col-md-9 col-md-offset-3" id="edytuj_profil">
@@ -177,7 +214,8 @@
 	<h2 style="margin-top:80px;">Edytuj profil</h2>		
 	<hr/>
 	<img src="img/help/06_edytuj_profil.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
-	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
+	<p class="col-xs-4 col-sm-4 col-md-4">Na tej stronie można zmienić podstawowe dane takie jak:
+	<b>hasło</b>, <b>imię</b>, <b>nazwisko</b> i <b>płeć</b></p>
 </div>
 
 <div class="container col-md-9 col-md-offset-3" id="kontaktowy">
@@ -185,7 +223,7 @@
 	<h2 style="margin-top:80px;">Formularz kontaktowy</h2>		
 	<hr/>
 	<img src="img/help/07_formularz_kontaktowy.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
-	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
+	<p class="col-xs-4 col-sm-4 col-md-4">Formularz pozwala na wysłanie pytania do administacji serwisu.</p>
 </div>
 
 

@@ -14,7 +14,7 @@
 	}
 
 	if (isset($_SESSION['formSuccessCode'])) {
-		echo '<div class="alert alert-success">';
+		echo '<div class="alert alert-success" >';
 		echo '<a href="#" class="close" data-dismiss="alert"> &times; </a>'; 
 		
 		echo '<strong>Użytownik zarejestrowany poprawnie. E-mail z linkiem aktywacyjnym został wysłany. </strong>';
@@ -48,8 +48,12 @@
 		unset($_SESSION['forgottenPass']);
 	}
 ?>
-
-<div class="container">
+<style>
+    .panel{
+        background: rgba(250, 250, 250, 0.6);
+    }
+</style>
+<div class="container" >
 	<div class="col-md-4 col-md-offset-4" style="height:75vh;">
 		<form class="form-signin" role="form" style="margin-right:10px;margin-left:10px; margin-top:40%" method="post"	action="controler/LogIn.php">
 			<h3	style="text-align:center;	font-size:27px; font-weight:bold;	padding-bottom:15px;">Logowanie	do systemu</h3>

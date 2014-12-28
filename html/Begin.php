@@ -59,7 +59,7 @@
 		<?php include_once("Navbar.php"); ?>
 		<div id="wrapper" class="container col-sm-12 col-md-12 col-lg-12" style="padding-left: 0px; padding-right: 0px;">
 			<div id="content_wrapper">
-				<div class="panel col-sm-12 col-md-12 col-lg-12" style="padding: 20px; background: rgba(250, 250, 250, 1.0);
+				<div class="panel col-sm-12 col-md-12 col-lg-12" style="padding: 20px; 
 				box-shadow: 2px 2px 12px #666; box-shadow: -2px -2px 12px #666;
 				">
 

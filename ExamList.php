@@ -132,7 +132,7 @@
 		echo "<td id=\"row-lp-" . $i . "\" style=\"text-align: center;\">" . $i . ".</td>\n";
 		
 		// Name
-		echo "<td id=\"row-name-id-" . $id . "\"><a id=\"linkS1\" href=\"ExamView.php?id=" . $id . "\" style=\"color: #000\">" . $name . "</a></td>\n";
+		echo "<td id=\"row-name-id-" . $id . "\"><a id=\"linkS1\" href=\"ExamView.php?id=" . $id . "\" style=\"color: #000\" data-toggle='tooltip' data-placement='top' title='Informacje o egzaminie'>" . $name . "</a></td>\n";
 		
 		// Dates
 		if ($examDays == null) {
