@@ -119,7 +119,7 @@
 	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
 </div>
 
-<div class="container col-md-9 col-md-offset-3" id="zmiana_formatu_email">
+<div class="container col-md-9 col-md-offset-3" id="zmiana_formatu_email" style="height:500px;">
 	<a name="zmiana_formatu_email"></a>
 	<h2 style="margin-top:80px;">Zmiana formatu wprowadzanych adresów e-mail</h2>		
 	<hr/>
