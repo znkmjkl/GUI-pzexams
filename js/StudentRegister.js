@@ -221,7 +221,7 @@ $(document).on('click', '.list li', function() {
 
 	$('tr.' + myClass + ' .studentName').html(hisHtml);
 	$('tr.' + myClass + ' .oferts .ofertNr').removeClass('popupLink');
-	$('tr.' + myClass + ' .oferts .ofertNr').html(Number($('tr.' + myClass + ' .oferts .ofertNr').html()) - 1);
+	$('tr.' + myClass + ' .oferts .ofertNr').html(Number($('tr.' + myClass + ' .oferts .ofertNr').html().charAt(0)) - 1);
 	$('tr.' + myClass + ' .oferts .divPop').removeClass('exchangePopup');
 	$('tbody tr.' + hisClass + ' .studentName').html(myHtml);
 	$('tbody tr.' + hisClass + ' .oferts .ofertNr').addClass('popupLink');
@@ -271,10 +271,9 @@ $(document).on('click', '.list li', function() {
 		if(!isAdded) {
 			if(!$(this).closest('tr').hasClass('me')) {
 				$(this).find('button.btn-success').fadeIn(100);
-			} 
-			else {
+			} else {
 				if(!($('#showOferts').length > 0)) {
-					if(!($('#showOferts').length > 0)) {
+					if(!($('#showOferts').length > 0) && Number($(this).find('.ofertNr').html()) != 0) {
 						$('.popupLink').append('<span id="showOferts"> - pokaż oferty</span>');
 					}
 				} else {
