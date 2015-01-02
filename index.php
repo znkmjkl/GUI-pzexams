@@ -1,4 +1,5 @@
 <?php
+	ob_start();
 	include_once("lib/Lib.php");
 	
 	$title = "$appName - Strona Główna";
