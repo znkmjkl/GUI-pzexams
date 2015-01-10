@@ -24,7 +24,17 @@
 		
 		unset($_SESSION['formSuccessCode']);
 	}
-
+	if (isset($_SESSION['logoutSuccess'])) {
+		echo '<div class="alert alert-success" >';
+		echo '<a href="#" class="close" data-dismiss="alert"> &times; </a>'; 
+		
+		echo '<strong style="display:block; text-align:center;">Zostałeś poprawnie wylogowany z serwisu.</strong>';
+		
+		echo '</div>'; 
+		
+		unset($_SESSION['logoutSuccess']);
+	}
+	
 	if (isset($_SESSION['ERROR'])) {
 		echo '<div class="alert alert-danger">';
 		echo '<a href="#" class="close" data-dismiss="alert"> &times; </a>'; 
@@ -59,9 +69,9 @@
 		<form class="form-signin" role="form" style="margin-right:10px;margin-left:10px; margin-top:40%" method="post"	action="controler/LogIn.php">
 			<h3	style="text-align:center;	font-size:27px; font-weight:bold;	padding-bottom:15px;">Logowanie	do systemu</h3>
 			
-			<input type="email" name="email" class="form-control" placeholder="Adres e-mail" required	autofocus style="margin-bottom:3px;">
+			<input type="email" name="email" class="form-control" placeholder="Adres e-mail" required	autofocus style="margin-bottom:3px; height:45px;">
 			
-			<input type="password" style="margin-top:10px;" name="pass"	class="form-control" placeholder="Hasło" required>			
+			<input type="password" style="margin-top:10px; height:45px;" name="pass"	class="form-control" placeholder="Hasło" required>			
 			
 			<label class="">
 				<a href="ForgottenPassword.php">Zapomniałeś hasła?</a>
