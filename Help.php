@@ -116,7 +116,10 @@
 	<h2 style="margin-top:80px;">Dodawanie studentów do egzaminu I</h2>		
 	<hr/>
 	<img src="img/help/03_lista_studentow_pierwszy.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
-	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
+	<p class="col-xs-4 col-sm-4 col-md-4">Strona służy do edycji listy studentów, którzy mogą przystąpić do egzaminu.
+	W widocznym polu tekstowym należy wpisać bądź wkleić listę danych studentów w określonym formacie, a następnie użyć przycisku "Dodaj",
+	aby przetworzyć wprowadzone dane. W przypadku poprawnych danych studenci pojawią się na liście, w przeciwnym wypadku użytkownik
+	zostanie poinformowany o niepowodzeniu.</p>
 </div>
 
 <div class="container col-md-9 col-md-offset-3" id="zmiana_formatu_email" style="height:500px;">
@@ -124,7 +127,11 @@
 	<h2 style="margin-top:80px;">Zmiana formatu wprowadzanych adresów e-mail</h2>		
 	<hr/>
 	<img src="img/help/03_lista_studentow_format_mail.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
-	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
+	<p class="col-xs-4 col-sm-4 col-md-4">Określenie formatu wprowadzanych danych jest niezbędne do poprawnego przetworzenia 
+		wprowadzanych danych o studentach.</p>
+	<p class="col-xs-4 col-sm-4 col-md-4 col-xs-offset-6" style='float: right;'>Należy podać znaki, między którymi znajdują się adresy e-mail (jeśli takowe występują). Jeśli ich nie ma,
+		to nie ma konieczności usuwania ich z formatu. Należy również określić znak oddzielający rekordy na liście.</p>
+
 </div>
 
 <div class="container col-md-9 col-md-offset-3" id="dodawanie_studentow2">
@@ -132,7 +139,8 @@
 	<h2 style="margin-top:80px;">Dodawanie studentów do egzaminu II</h2>
 	<hr/>
 	<img src="img/help/03_lista_studentow_dodawanie.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
-	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
+	<p class="col-xs-4 col-sm-4 col-md-4">W utworzonej liście studentów mamy podgląd danych studentów, które zostały poprawnie przetworzone.
+		Istnieje możliwość usunięcia studentów z listy. Ustawienia listy jak i całego procesu tworzenia egzaminu zatwierdzamy przyciskiem "Potwierdź".</p>
 </div>
 
 <div class="container col-md-9 col-md-offset-3" id="lista_aktualnych_egzaminow">

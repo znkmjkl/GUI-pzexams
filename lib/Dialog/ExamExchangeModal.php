@@ -24,7 +24,7 @@
 									<td class='oferts'>
 										<span class="divPop">
 											<span name="test" class='ofertNr'>1</span>
-											<button title='Zgłoś chęć wymiany' class='btn btn-sm btn-success glyphicon glyphicon-plus' style='display: none;'></button>
+											<button data-toggle='tooltip' data-placement='bottom' title='Zgłoś ofertę wymiany' class='btn btn-sm btn-success glyphicon glyphicon-plus' style='display: none;'></button>
 											<ul class="list" style='display: none;'>
 												<li class='record4'>10.30-10.45</li>
 											</ul>
@@ -36,7 +36,7 @@
 									<td class='oferts'>
 										<span class="divPop exchangePopup">
 											<span name="test" class="popupLink ofertNr">2</span>
-											<button title='Zgłoś chęć wymiany' class='btn btn-sm btn-success glyphicon glyphicon-plus' style='display: none;'></button>
+											<button title='Zgłoś ofertę wymiany' class='btn btn-sm btn-success glyphicon glyphicon-plus' style='display: none;'></button>
 											<ul class="list">
 												<li class='record1'>9.45-10.00</li>
 												<li class='record4'>10.30-10.45</li>
@@ -45,8 +45,8 @@
 
 									</td>
 								</tr>
-								<tr class='record3'><td>10.15-10.30</td><td class='studentName'>Tomasz Krawiec</td><td class='oferts'><span class="divPop"><span name="test" class='ofertNr'>0</span><button title='Zgłoś chęć wymiany' class='btn btn-sm btn-success glyphicon glyphicon-plus' style='display: none;'></button></span></td></tr>
-								<tr class='record4'><td>10.30-10.45</td><td class='studentName'>Grażyna Derp</td><td class='oferts'><span class="divPop"><span name="test" class='ofertNr'>0</span><button title='Zgłoś chęć wymiany' class='btn btn-sm btn-success glyphicon glyphicon-plus' style='display: none;'></button></span></td></tr>
+								<tr class='record3'><td>10.15-10.30</td><td class='studentName'>Tomasz Krawiec</td><td class='oferts'><span class="divPop"><span name="test" class='ofertNr'>0</span><button data-toggle='tooltip' data-placement='bottom' title='Zgłoś ofertę wymiany' class='btn btn-sm btn-success glyphicon glyphicon-plus' style='display: none;'></button></span></td></tr>
+								<tr class='record4'><td>10.30-10.45</td><td class='studentName'>Grażyna Derp</td><td class='oferts'><span class="divPop"><span name="test" class='ofertNr'>0</span><button data-toggle='tooltip' data-placement='bottom' title='Zgłoś ofertę wymiany' class='btn btn-sm btn-success glyphicon glyphicon-plus' style='display: none;'></button></span></td></tr>
 							</tbody>
 
 						</table>

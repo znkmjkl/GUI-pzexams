@@ -250,7 +250,7 @@ $(document).on('click', '.list li', function() {
 			ofertNr.html(Number(ofertNr.html()) + 1);
 			$(this).toggleClass('btn-success btn-danger');
 			$(this).toggleClass('glyphicon-remove glyphicon-plus');
-			$(this).attr('title', 'Cofnij ofertę wymiany');
+			$(this).attr('title', 'Cofnij ofertę wymiany').tooltip('fixTitle').tooltip('show');
 		}
 	});
 
@@ -261,7 +261,8 @@ $(document).on('click', '.list li', function() {
 		$(this).removeClass('added');
 		$(this).toggleClass('btn-success btn-danger');
 		$(this).toggleClass('glyphicon-remove glyphicon-plus');
-		$(this).attr('title', 'Zgłoś ofertę wymiany');
+
+		$(this).attr('title', 'Zgłoś ofertę wymiany').tooltip('fixTitle').tooltip('show');
 	});
 
 	$(document).on('mouseenter', '.oferts', function() {

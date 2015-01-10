@@ -21,16 +21,16 @@
 		$response = '<div class="no-rec">not found</div>';
 		$P1 = "
 		<div class=\"form-group\">
-			<label for=\"sNameEdit\" class=\"col-xs-4	col-sm-4	col-md-4	control-label\">Imię</label>
+			<label for=\"sNameEdit\" class=\"col-xs-4 col-sm-4 col-md-4 control-label\">Imię</label>
 			<div class=\"col-xs-6	col-sm-6	col-md-6\">
-				<input type=\"text\" class=\"form-control\" id=\"sNameEdit\" placeholder=\"Wprowadź	Imię\" name=\"sNameEdit\" value=\"".$student->getFirstName()."\">
+				<input type=\"text\" class=\"form-control\" id=\"sNameEdit\" placeholder=\"Wprowadź imię\" name=\"sNameEdit\" value=\"".$student->getFirstName()."\">
 			</div>
 		</div>";
 		$P2 = "
 		<div class=\"form-group\">
 			<label for=\"sSurnameEdit\" class=\"col-xs-4	col-sm-4	col-md-4	control-label\">Nazwisko</label>
 			<div class=\"col-xs-6	col-sm-6	col-md-6\">
-				<input type=\"text\" class=\"form-control\" id=\"sSurnameEdit\" placeholder=\"Wprowadź	Nazwisko\" name=\"sSurnameEdit\" value=\"".$student->getSurName()."\">
+				<input type=\"text\" class=\"form-control\" id=\"sSurnameEdit\" placeholder=\"Wprowadź nazwisko\" name=\"sSurnameEdit\" value=\"".$student->getSurName()."\">
 			</div>
 		</div>";
 		$response = $P1.$P2;
