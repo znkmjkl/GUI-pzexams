@@ -72,7 +72,16 @@
 		<li><a href="#kontaktowy">Formularz kontaktowy</a></li>
 	</ol>
 </div>
-		
+
+<div class="container col-md-9 col-md-offset-3" id="strona_glowna" >
+	<a name="strona_glowna"></a>
+	<h2 style="margin-top:80px;">Strona główna użytkownika</h2>		
+	<hr/>
+	<img src="img/help/02_po_zalogowaniu.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
+	<p class="col-xs-4 col-sm-4 col-md-4">Jest to strona, która na która jesteśmy przenoszeni od razu
+	po zalogowaniu. <br/><br/>Zawiera informacje statystyczne o wszystkich egzaminach jakie dotychczas
+	były wprowadzane do systemu.</p>
+</div>		
 
 <div class="container col-md-9 col-md-offset-3" id="strona_glowna" >
 	<a name="strona_glowna"></a>
@@ -91,8 +100,8 @@
 	<img src="img/help/03_dodaj_egzamin.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
 	<p class="col-xs-4 col-sm-4 col-md-4">Po wybraniu pozycji "Dodaj egzamin" z menu, będzie można utworzyć
 	nowy egzamin.  <br/><br/> W pierwszym etapie tworzenia egzaminu należy wprowadzić <b>nazwę</b> oraz
-	<b>czas trwania</b>. Można od razu wprowadzić terminy (można to później ustawić), aby to zrobic
-	należy kliknąć przycisk <b>+</b> a następnie wypełnić poprawnie pola w formularzu.</p>
+	<b>czas trwania</b>. Można od razu wprowadzić terminy, aby to zrobic
+	należy kliknąć zielony przycisk <b>+</b>,a następnie wypełnić poprawnie pola w formularzu.</p>
 </div>
 
 <div class="container col-md-9 col-md-offset-3" id="dodaj_termin">
@@ -101,14 +110,14 @@
 	<hr/>
 	<img src="img/help/03_dodawanie_terminu.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
 	<p class="col-xs-4 col-sm-4 col-md-4">By wprowadzić nowy termin egzaminu należy
-	poprawnie uzupełnić formularz pokazany po lewej stronie. <br/><br/>Jest tu podany <b>domyślny czas egzaminu</b> (który wcześniej
-	został ustawiony). <br/>Następnymi polami są - <b>data egzamin, data rozpoczęcia i zakończenia</b>. Dane do tych pól 
+	poprawnie uzupełnić formularz pokazany po lewej stronie. <br/><br/>Jest tu podamy <b>domyślny czas egzaminu</b> (można go
+	dostosowywać przy każdym terminie).  <br/>Następnymi polami są - <b>data egzaminu, data rozpoczęcia i zakończenia</b>. Dane do tych pól 
 	wypełnia się przy pomocy kalendarza, który pojawia się po kliknięciu w pole lub ikonkę z prawej strony.</p>
-	<img src="img/help/03_termin_dodano.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
+	<div class="col-xs-8 col-sm-8 col-md-8"><img src="img/help/03_termin_dodano.jpg" height="500" alt=""></div>
 	<p class="col-xs-4 col-sm-4 col-md-4"><br/><br/><br/><br/>Po wypełnieniu formularza pokazuję się na stronie okienko w którym, 
 	wygenerowane zostaną wszystkie godziny egzaminu w danym terminie. <br/><br/>
 	Można je pojedynczo usuwać (poprzez kliknięcie ikonki z lewej strony) lub usunąć cały dzień (klikając
-	na znak "<b>-</b>" na dole)</p>
+	na czewony "<b>-</b>" na dole)</p>
 </div>
 
 <div class="container col-md-9 col-md-offset-3" id="dodawanie_studentow1">
