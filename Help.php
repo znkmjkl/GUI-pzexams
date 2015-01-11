@@ -52,14 +52,14 @@
 </div>
 
 
-<div class="navbar-example" style="position: fixed;top: 91px;display: inline-block;width: 20%; z-index:1000;">
+<div class="navbar-example" style="position: fixed; top: 91px; display: inline-block; width: 20%; z-index:1000;">
 	<h2>Spis treści</h2>
 	<hr/>
 	<ol id="top-menu">
 		<li><a href="#strona_glowna">Strona główna użytkownika</a></li>						
 		<li><a href="#nowy_egzamin">Tworzenie nowego egzaminu</a></li>
 		<li><a href="#dodaj_termin">Dodawanie terminu egzaminu</a></li>
-		<li><a href="#dodawanie_studentow1">Dodawanie studentów do egzaminu I</a></li>
+		<li><a id='addingStudentList' href="#dodawanie_studentow1">Dodawanie studentów do egzaminu I</a></li>
 		<li><a href="#zmiana_formatu_email">Format wprowadzanych adresów email</a></li>
 		<li><a href="#dodawanie_studentow2">Dodawanie studentów do egzaminu II</a></li>
 		<li><a href="#lista_aktualnych_egzaminow">Lista aktualnych egzaminów</a></li>
@@ -180,7 +180,9 @@
 	<h2 style="margin-top:80px;">Dodaj kolejnych studentów do egzaminu</h2>		
 	<hr/>
 	<img src="img/help/04_dodaj_studentow.jpg" alt="" class="col-xs-8 col-sm-8 col-md-8">
-	<p class="col-xs-4 col-sm-4 col-md-4">Treść</p>
+	<p class="col-xs-4 col-sm-4 col-md-4">
+		Schemat edycji listy studentów wygląda identycznie jak w przypadku <a id='linkToAddingStudentList' style='cursor: pointer;'>dodawania listy studentów</a> do nowego egzaminu.
+	</p>
 </div>
 
 <div class="container col-md-9 col-md-offset-3" id="edycja_egzaminu">

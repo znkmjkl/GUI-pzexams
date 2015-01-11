@@ -5,4 +5,8 @@ $(document).ready(function() {
 	$('[tooltip-placement="top"]').tooltip({'placement': 'top'});
 	$('[tooltip-placement="left"]').tooltip({'placement': 'left'});
 	$('[tooltip-placement="right"]').tooltip({'placement': 'right'});
+
+	$('#linkToAddingStudentList').click(function() {
+		$('#addingStudentList').click();
+	});
 });
