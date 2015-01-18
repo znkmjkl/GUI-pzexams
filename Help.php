@@ -52,7 +52,7 @@
 </div>
 
 
-<div class="navbar-example" style="position: fixed; top: 91px; display: inline-block; width: 20%; z-index:1000;">
+<div class="navbar-example" style="position: fixed; top: 91px; display: inline-block; width:270px; z-index:1000;">
 	<h2>Spis treści</h2>
 	<hr/>
 	<ol id="top-menu">

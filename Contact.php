@@ -56,7 +56,7 @@ ul. Egzaminów 64<br>
 		</fieldset>
 	</div>
 	<p style="margin-top: -20px; margin-left:40px; margin-bottom: 40px;">
-	Jeżeli masz jakiekolwiek pytania odnośnie naszego serwis to uruchomiliśmy specjalny formularz kontaktowy dzięki, któremu możesz skontaktować się z zespołem tworzącym serwis
+	Jeżeli masz jakiekolwiek pytania odnośnie naszego serwisu to uruchomiliśmy specjalny formularz kontaktowy, dzięki któremu możesz skontaktować się z zespołem tworzącym serwis
 	<?php
 		echo "$appName.";
 	?>

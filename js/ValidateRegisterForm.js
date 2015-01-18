@@ -24,12 +24,12 @@ jQuery( document ).ready(function( $ ) {
 	{ 
 		if  ($errorCode ==  emailFieldErrorType.NOT_AN_EMAIL) {
 			$("#email-error-message").html('<span style="background-color:#F13333;" class="badge pull-left ">!</span>' +
-										   '<span style="padding:5px">Podany adress nie jest prawidłowym adresem e-mail.</span>') ; 
+										   '<span style="padding:5px">Podany adres nie jest prawidłowym adresem e-mail.</span>') ; 
 			return ; 
 		} 
 		if  ($errorCode ==  emailFieldErrorType.BAD_DOMAIN) { 
 			$("#email-error-message").html('<span style="background-color:#F13333;" class="badge pull-left ">!</span>' +
-											'<span style="padding:5px"> Przepraszamy w chwiki obecnej ta domena nie jest obsługiwana.</span>') ; 
+											'<span style="padding:5px"> Przepraszamy w chwili obecnej ta domena nie jest obsługiwana.</span>') ; 
 			return ; 
 		} 
 		if  ($errorCode ==  emailFieldErrorType.ADRESS_ALREADY_USED) { 

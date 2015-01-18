@@ -24,7 +24,7 @@ $("#contactForm").validate({
 		},
 		email: {
 			required: "Proszę podać kontaktowy adres e-mail.",
-			email: "Podany adress nie jest prawidłowym adresem e-mail."
+			email: "Podany adres nie jest prawidłowym adresem e-mail."
 		}
 	},
 	//odpowiedzialne za umieszcenie komunikatu wewntrz odpowiedniego element
