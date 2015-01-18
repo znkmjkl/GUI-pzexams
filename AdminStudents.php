@@ -51,7 +51,7 @@
 				<th>Nazwisko</th>
 				<th>E-mail</th>
 				<th style="text-align: center;">Jest zapisany na egzamin/y</th>
-				<th style="text-align: center;">Operację</th>
+				<th style="text-align: center;">Operacje</th>
 			</tr>
 		</thead>
 		<tbody>';

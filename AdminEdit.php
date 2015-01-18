@@ -78,7 +78,7 @@
 		<label for="<?php echo strtolower($xml->Email->Password->getName());?>" class="col-xs-1	col-sm-1	col-md-1	control-label"><?php echo $xml->Email->Password->getName(); ?></label>
 			<div class="col-xs-4	col-sm-4	col-md-4">
 				<input type="password" class="form-control" id="<?php echo strtolower($xml->Email->Password->getName());?>" name="<?php echo strtolower($xml->Email->Password->getName());?>" value="<?php echo $xml->Email->Password; ?>">
-				<input id="pass2" type="checkbox" />Pokaż hasło
+				<input id="pass2" type="checkbox" /> Pokaż hasło
 		</div>
 	</div><br>
 	<div class="form-group">
@@ -108,7 +108,7 @@
 		<label for="<?php echo strtolower($xml->Authorization->Code->getName());?>" class="col-xs-1	col-sm-1	col-md-1	control-label"><?php echo $xml->Authorization->Code->getName(); ?></label>
 			<div class="col-xs-4	col-sm-4	col-md-4">
 				<input type="password" class="form-control" id="<?php echo strtolower($xml->Authorization->Code->getName());?>" name="<?php echo strtolower($xml->Authorization->Code->getName());?>" value="<?php echo $xml->Authorization->Code; ?>">
-				<input id="code2" type="checkbox" />Pokaż hasło
+				<input id="code2" type="checkbox" /> Pokaż hasło
 		</div>
 	</div><br>
 <?php

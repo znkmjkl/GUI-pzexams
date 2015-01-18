@@ -10,7 +10,7 @@
 			</div>
 		
 			<div class="form-group" id="duration_group">
-				<label for="exam_name" class="control-label col-sm-3 col-md-3">Czas trwania egzaminu</label>
+				<label for="exam_name" class="control-label col-sm-3 col-md-3">Czas trwania egzaminu (na jedną osobę)</label>
 				<div class="col-sm-2 col-md-2">
 					<input type="number" name="duration" class="form-control" id="exam_duration" placeholder="Podaj czas trwania pojedyńczej jednostki egzaminacyjnej" maxlength="2" value="20" min="0" max="100">
 				</div>

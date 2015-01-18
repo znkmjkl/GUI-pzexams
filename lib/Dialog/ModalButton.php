@@ -1,6 +1,6 @@
 	<div data-toggle="tooltip" data-placement="bottom" title="Dodaj nowy termin" style="width;61px; display:inline-block;">
-    <button class="btn btn-success btn-lg" data-toggle="modal" id="addExamDayGlyph" data-target="#myModal">
-  		  <i class="glyphicon glyphicon-plus" style="font-size:30px; font-weight:bold;"></i>
+    <button class="btn btn-success btn-lg" data-toggle="modal" id="addExamDayGlyph" data-target="#myModal" style="margin-left:20px;margin-top:15px;">
+  		  <b style="font-size:20px;">Dodaj termin</b>
 	 </button>
   </div>
 	

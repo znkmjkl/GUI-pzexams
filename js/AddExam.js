@@ -360,7 +360,7 @@ $( document ).ready(function() {
   			break;
   		case 3:
   			$("#error").html('<span style="background-color:#F13333;" class="badge pull-left ">!</span>' +
-											'<span style="padding:5px">Podana data już minęła. Podaj inną date.</span>') ;
+											'<span style="padding:5px">Podana data już minęła. Podaj inną datę.</span>') ;
   			break;
   		case 4:
   			$("#error").html('<span style="background-color:#F13333;" class="badge pull-left ">!</span>' +

@@ -92,7 +92,7 @@ $( document ).ready(function() {
 											'<span style="padding:5px">Należy wypełnić wszystkie pola.</span>') ;			
 		} else if (validate == 3) {
 			$("#error").html('<span style="background-color:#F13333;" class="badge pull-left ">!</span>' +
-											'<span style="padding:5px">Podana data już minęła. Podaj inną date.</span>') ;			
+											'<span style="padding:5px">Podana data już minęła. Podaj inną datę.</span>') ;			
 		} else if (validate == 4) {
 			$("#error").html('<span style="background-color:#F13333;" class="badge pull-left ">!</span>' +
 											'<span style="padding:5px">Czas egzaminu powinien wynosić co najmniej 5 minut.</span>') ;	
